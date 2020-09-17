@@ -1,0 +1,11 @@
+.tausta
+{
+  width: 400px;
+  height:200px;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 10px;
+  float:inherit;
+  background-color: #00FFFF;
+  border-style: solid;
+}
