@@ -6,27 +6,27 @@ yht += y;
 }
   document.getElementById('tulosta1').innerHTML = '<p>'+ yht + '</p>';
 }
-function potenssi()
+function LaskeY()
 {
-  var koro = document.getElementById('kor').value;
-  var pote = document.getElementById('pot').value;
-  yht = koro;
-  for(var p = 1; p < pote; p++)
+  var kor = document.getElementById('koro').value;
+  var poten = document.getElementById('pote').value;
+  yht = kor;
+  for(var p = 1; p < poten; p++)
   {
-    yht *= koro;
+    yht *= kor;
   }
-  document.getElementById('lukujenTulostusP').innerHTML = '<p>' + yht + '</p>';
+  document.getElementById('tulosta2').innerHTML = '<p>' + yht + '</p>';
 }
-function etsiSuurinPienin()
-{
-  var taulu = [], temp;
-  for(var x = 0; x < 5; x++)
-  {
-    temp = document.getElementById('taulukko['+x+']').value;
-    temp = parseInt(temp);
-    taulu.push(temp);
+function Etsin()  {
+
+var taulu = [], temp;
+
+for(var x = 0; x < 5; x++)  {
+temp = document.getElementById('taulukko['+x+']').value;
+temp = parseInt(temp);
+taulu.push(temp);
     //alert(taulu);
   }
   taulu = taulu.sort((a,b) => a-b);
-  document.getElementById('lukujenTulostusT').innerHTML = '<p>Pienin luku: ' + taulu[0] + ' ja suurin luku: '+ taulu[taulu.length-1];
+  document.getElementById('tulosta3').innerHTML = '<p>Pienin luku: ' + taulu[0] + ' ja suurin luku: '+ taulu[taulu.length-1];
 }

@@ -42,8 +42,11 @@
 
 <form class="" action="index.html" method="post">
 
+<p>Anna korotettava luku:<input type="text" name="" id="koro" value=""></p>
 
-<button type="button" id="tulosta" onclick="Sanat()">Tulosta</button>
+<p>Anna potenssi:<input type="text" name="" value="" id="pote"></p>
+
+<button type="button" name="button" onclick="LaskeY()">Laske</button>
 
     <div id="tulosta2"></div>
 </form>
@@ -54,11 +57,17 @@
 
 <h1>Tehtävä 9</h1>
 
-<p>Ohjelma, joka tulostaa 10 ensimmäistä numeroa</p>
+<p>Ohjelma, joka etsii annetusta luvuista suurimman ja pienimmän arvon</p>
 
   <form class="" action="index.html" method="post">
 
-<button type="button" name="button" onclick="num()">Ensimmäiset</button>
+    <p>Anna 1.luku <input type="text" name="" value="" id="taulukko[0]">  </p>
+    <p>Anna 2.luku <input type="text" name="" value="" id="taulukko[1]">  </p>
+    <p>Anna 3.luku <input type="text" name="" value="" id="taulukko[2]">  </p>
+    <p>Anna 4.luku <input type="text" name="" value="" id="taulukko[3]">  </p>
+    <p>Anna 5.luku <input type="text" name="" value="" id="taulukko[4]">  </p>
+
+<button type="button" name="button" onclick="Etsin()">Etsi</button>
 
       <div id="tulosta3"></div>
 
