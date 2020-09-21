@@ -1,4 +1,5 @@
-function PieSuur(10, 5, 8, 2, 7) {
+function PieSuur(num)
+{
 
 num.sort();
 
