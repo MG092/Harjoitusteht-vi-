@@ -1,10 +1,31 @@
-function aakkoset(sana) {
+function arvostele(opiskelija, koe) {
 
-var sana = "webmaster"
+var opiskelija = [['Daniel', 80],['Viivi', 77], ['Tiina', 88], ['Ismael', 95],
+                ['Tuomas', 68]]
+                
 
-var tauluteksti= Array.from(sana); tauluteksti.sort();
+if (koe < 50) {
 
-var sanat  = tauluteksti.join('');
+console.log(opiskelija + "Hylätty");
+}
+else if (koe < 60) {
 
-console.log(tauluteksti);
+console.log(opiskelija + "T1");
+}
+else if (koe < 70) {
+
+console.log(opiskelija + "T2");
+}
+else if (koe < 80) {
+
+console.log(opiskelija + "T3");
+}
+else if (koe < 90) {
+
+console.log(opiskelija + "T4");
+}
+else {
+
+  console.log(opiskelija + "K5");
+}
 }
